@@ -36,10 +36,6 @@ nav ul li a {
   text-align: center;
 }
 
-nav ul li a:hover {
-    background-color: rgb(245, 0, 0);
-    color: white;
-}
 
 .logo{
   padding-top: 10px;
@@ -77,13 +73,10 @@ footer{
   left: 0;
   padding: 10px;
   text-align: center;
-  background-color: red;
-
 }
 
 .staticadvert{
   color: rgb(255, 210, 0);
-
   text-align: center;
   height: 330px;
 }
@@ -115,11 +108,43 @@ a {
   color: rgb(255, 210, 0);
 }
 
-h2{
-  background-color: black;
-  color: white;
+h2:hover, nav ul li a:hover{
+  background-color: rgb(255, 210, 0);
+  color: black;
 }
 
 #coolBuy{
   display: none;
+}
+
+h6{
+  color: red;
+}
+
+.holyDiv{
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.amazingForm{
+text-align: center;
+margin-right: 10%;
+}
+
+
+label{
+    float: left;
+    clear: left;
+    width: 250px;
+    text-align: right;
+    padding: 2px;
+
+}
+
+input[type=text]{
+  width: 230px;
+  float: left;
+  margin-left: 5px;
 }

@@ -3,6 +3,7 @@
 $(document).ready(function(){
   setInterval(niceAnime,1000);
 });
+
 function niceAnime(){
         var div = $("#awesomeAnimation");
         var buy = $("#coolBuy");

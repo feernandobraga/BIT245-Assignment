@@ -2,6 +2,8 @@
 <html>
 <head>
   <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="scripts.js"></script>
 <title>Fernando Braga</title>
 </head>
 <body>
@@ -10,7 +12,7 @@
   <header>
       <div class="row">
         <div class="<column">
-          <img class="logo" src="fblogovert.png" alt="Fernando Braga Logo" width="250px">
+          <img class="logo" src="fblogovert.png" width="250px">
         </div>
         <div class="column">
           <h1>Fernando <span class="yellow">Braga </span>Photography</h1>
@@ -28,16 +30,38 @@
   <main>
 
     <div class="staticadvert">
-      <p class="">Paragraph test</p>
-      <h1>This is a Heading</h1>
-      <img src="milkyway.jpg" alt="Milky Way" width="300px">
+      <h1>Can you click on the image?</h1>
+      <div id="awesomeAnimation">
+        <a href="http://www.fernandobragaphoto.com" target="_blank">
+          <img src="milkyway.jpg" width="500px">
+          <div id="coolBuy">ClickMe!</div>
+        </a>
+      </div>
     </div>
+
+    <div class="videoadvert">
+      <h3>We have prepared a very convincing video for you:</h3>
+      <video width="640" muted autoplay loop>
+          <source src="fbragavideo.mp4" type="video/mp4">
+          <source src="fbragavideo.webm" type="video/webm">
+          <object id="flowplayer" width="700" height="400" data="flowplayer-3.2.7.swf" type="application/x-shockwave-flash">
+              <param name="movie" value="flowplayer-3.2.7.swf">
+              <param name="flashvars" value='config={"clip":"fbragavideo.mp4"}'>
+          </object>
+          Your browser does not support the video tag.
+      </video>
+      <a href="http://www.fernandobragaphoto.com" target="_blank">
+        <h3>Click now to enjoy this once in a lifetime opportunity!</h3>
+      </a>
+    </div>
+
+
+
 
   </main>
 
   <footer>
     <p> Fernando Braga Photography © | fernando.bragga@gmail.com </p>
-    <p>I'm testing git but I don't think it's working</p>
   </footer>
 
 </div>

@@ -5,16 +5,14 @@
   <link rel="stylesheet" href="styles.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="scripts.js"></script>
-  <script src="somejs"></script>
   <title>Fernando Braga</title>
 </head>
 <body>
 <div class="centerviewpoint">
 
-
   <main>
   <div class="holyDiv">
-      <form name="inputForm" class="amazingForm" onsubmit="return validateForm()" method="post">
+      <form name="inputForm" action="process.php" class="amazingForm" onsubmit="return validateForm()" method="post">
         <label>Child's Family Name: </label>
         <input type="text" name="kidFname" value="">
         <br>
@@ -24,9 +22,7 @@
         <input type="submit" name="submitBtn" value="Submit">
         <input type="reset" name="clearBtn">
       </form>
-
   </div>
-    <button onclick="myFunction()">Try it</button>
 
   </main>
 

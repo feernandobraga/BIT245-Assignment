@@ -77,7 +77,8 @@ footer{
   left: 0;
   padding: 10px;
   text-align: center;
-  
+  background-color: red;
+
 }
 
 .staticadvert{
@@ -105,7 +106,6 @@ footer{
 
 }
 
-
 #awesomeAnimation{
   position: relative;
 }
@@ -113,6 +113,11 @@ footer{
 a {
   text-decoration: none;
   color: rgb(255, 210, 0);
+}
+
+h2{
+  background-color: black;
+  color: white;
 }
 
 #coolBuy{

@@ -1,0 +1,99 @@
+body {
+
+  color: white;
+  background-image: url(lightningbolt.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: rgb(28, 28, 28);
+  background-position: center;
+
+}
+
+nav ul{
+    list-style-type: none;
+    margin-top: 30px;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    display: block;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+nav li{
+    float: left;
+    background-color: rgb(55, 111, 145)
+}
+
+nav ul li a {
+  display: block;
+  width: auto;
+  color: rgb(43, 43, 43);
+  padding: 14px 16px;
+  text-decoration: none;
+  text-align: center;
+}
+
+nav ul li a:hover {
+    background-color: rgb(245, 0, 0);
+    color: white;
+}
+
+.logo{
+  padding-top: 10px;
+}
+
+.row{
+  display: flex;
+  background-color: ;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.column{
+  padding: 10px;
+}
+
+.column h1{
+  text-align: left;
+}
+
+.clearfix{
+  overflow: auto;
+}
+
+.yellow{
+  color: rgb(255, 210, 0);
+}
+
+footer{
+  font-style: italic;
+  position: absolute;
+  right: 0;
+  bottom: 1%;
+  left: 0;
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(58, 58, 58);
+}
+
+.staticadvert{
+  color: rgb(255, 210, 0);
+  background-color: red;
+  text-align: center;
+}
+
+.centerviewpoint{
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: auto;
+  border-radius: 3px;
+  background-color: rgba(83, 110, 133, 0.3);
+}

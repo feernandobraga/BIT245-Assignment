@@ -51,18 +51,17 @@
         $kid = mysqli_fetch_assoc($result_set);
         if ($kid['givenName'] == $childFirstName && $kid['carerFamilyName'] == $carerFamilyName) {
           $kidFound = true; ?>
-
-              <h2 class="yellow logo ">I've successfully retrieve someone from the database =D</h2>
-                <table class="resultTable">
-                  <tr>
-                    <th>Kid ID</th>
-                    <th>Given Name</th>
-                    <th>Family Name</th>
-                    <th>Gender</th>
-                    <th>Date of Birth</th>
-                    <th>Carer Given Name</th>
-                    <th>Carer Family Name</th>
-                  </tr>
+            <h2 class="yellow logo ">I've successfully retrieve someone from the database =D</h2>
+              <table class="resultTable">
+                <tr>
+                  <th>Kid ID</th>
+                  <th>Given Name</th>
+                  <th>Family Name</th>
+                  <th>Gender</th>
+                  <th>Date of Birth</th>
+                  <th>Carer Given Name</th>
+                  <th>Carer Family Name</th>
+                </tr>
           <?php
             echo
             "<tr>

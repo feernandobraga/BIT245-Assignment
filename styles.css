@@ -95,10 +95,6 @@ footer{
   text-align: center;
 }
 
-.videoadvert{
-
-}
-
 #awesomeAnimation{
   position: relative;
 }
@@ -123,23 +119,22 @@ h6{
 
 .holyDiv{
   height: 500px;
-
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.amazingForm{
-text-align: center;
-margin-right: 10%;
+.amazingForm {
+  text-align: center;
+  margin-right: 10%;
 }
 
 label{
-    float: left;
-    clear: left;
-    width: 250px;
-    text-align: right;
-    padding: 2px;
+  float: left;
+  clear: left;
+  width: 250px;
+  text-align: right;
+  padding: 2px;
 
 }
 
@@ -152,4 +147,29 @@ input[type=text]{
 ::placeholder{
   color: red;
   font-style: oblique;
+}
+
+#nomatch{
+  color: red;
+}
+
+#resultTable{
+  height: auto;
+  width: 150%;
+}
+
+th{
+  background-color: rgb(43, 43, 43);
+  color: rgb(255, 210, 0);
+}
+
+td{
+  background-color: rgba(94, 94, 94, 0.1);
+}
+th, td{
+  padding: 10px;
+}
+
+#containerDiv{
+  text-align: center;
 }

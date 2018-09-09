@@ -13,16 +13,7 @@ function validateForm() {
       return false;
     }
   }
-/*
-    if (x == "") {
-        document.getElementsByName("kidFname")[0].placeholder="You missed this one, mate!";
-        return false;
-    }
-    if (y == "")
-      document.getElementsByName("carerFname")[0].placeholder="You missed this one, mate!";
-      return false;
-   }
-*/
+
 $(document).ready(function(){
   setInterval(niceAnime,1000);
 });

@@ -1,1 +1,1 @@
-    <p> Fernando Braga Photography | fernando.bragga@gmail.com </p>
+    <p> Fernando Braga Photography &copy; | fernando.bragga@gmail.com </p>

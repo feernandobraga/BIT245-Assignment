@@ -12,7 +12,6 @@
   $childFirstName = $_POST['childFirstName'];
   $carerFamilyName = $_POST['carerFamilyName'];
 
-
   //sql query that lists all kids from database
   $query = "SELECT * FROM kids";
   $result_set = mysqli_query($db, $query);
@@ -52,7 +51,7 @@
         if ($kid['givenName'] == $childFirstName && $kid['carerFamilyName'] == $carerFamilyName) {
           $kidFound = true; ?>
             <h2 class="yellow logo ">I've successfully retrieve someone from the database =D</h2>
-              <table class="resultTable">
+              <table id="resultTable">
                 <tr>
                   <th>Kid ID</th>
                   <th>Given Name</th>
@@ -79,12 +78,15 @@
 
       if (!$GLOBALS['kidFound']) {
         ?>
-        <h1 id="nomatch">No kid found, sorry mate!</h1>
+        <h1 class="nomatch inDaMiddle">No kid found, sorry mate!</h1>
+
         <?php
       }
     ?>
     </div>
+
   </div>
+
   </main>
 
   <footer>

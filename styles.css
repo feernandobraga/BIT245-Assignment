@@ -89,7 +89,7 @@ footer{
   bottom: 0;
   left: 0;
   width: 50%;
-  height: auto;
+ height: auto;
   border-radius: 3px;
   background-color: rgba(83, 110, 133, 0.3);
   text-align: center;
@@ -118,7 +118,13 @@ h6{
 }
 
 .holyDiv{
-  height: 500px;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.happyForm{
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -149,12 +155,19 @@ input[type=text]{
   font-style: oblique;
 }
 
-#nomatch{
+.nomatch{
   color: red;
 }
 
+#wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #resultTable{
-  height: auto;
+  height: -30px;
+
 }
 
 th{
@@ -163,7 +176,7 @@ th{
 }
 
 td{
-  background-color: rgba(94, 94, 94, 0.1);
+  background-color: rgba(94, 94, 94, 0.7);
 }
 th, td{
   padding: 10px;
@@ -171,4 +184,11 @@ th, td{
 
 #containerDiv{
   text-align: center;
+}
+
+.inDaMiddle{
+  display: flex;
+  height: 70vh;
+  justify-content: center;
+  align-items: center;
 }

@@ -2,39 +2,40 @@
 <html>
 <head>
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/styles2.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="scripts.js"></script>
+  <script src="scripts/scripts.js"></script>
   <title>Fernando Braga</title>
 </head>
 <body>
-<div class="centerviewpoint">
+<div class="mainContainer">
 
-  <header>
-      <div class="row">
-        <div class="<column">
-          <img class="logo" src="fblogovert.png" width="250px">
-        </div>
-        <div class="column">
-          <h1>Fernando <span class="yellow">Braga </span>Photography</h1>
-        </div>
-      </div>
+  <header class="flexItem headerflex">
 
-      <nav>
+    <div class="flexLogo">
+      <img class="logo" src="media/fblogovert.png" width="250px">
+      <h1>Fernando <span class="yellow">Braga </span>Photography</h1>
+    </div>
+
+    <div class="wrapper">
+      <nav class="flex-nav">
         <ul>
           <li><a href="sponsors.html">Sponsors</a></li>
           <li><a href="index.html">Some Login Page</a></li>
         </ul>
       </nav>
+    </div>
+
   </header>
 
-  <main>
+
+  <main class="flexItem mainflex">
 
     <div class="staticadvert">
       <h1>Can you click on the image?</h1>
       <div id="awesomeAnimation">
         <a href="http://www.fernandobragaphoto.com" target="_blank">
-          <img src="milkyway.jpg" width="500px">
+          <img src="media/milkyway.jpg" width="500px">
           <div id="coolBuy">ClickMe!</div>
         </a>
       </div>
@@ -43,11 +44,11 @@
     <div class="videoadvert">
       <h3>We have prepared a very convincing video for you:</h3>
       <video width="640" muted autoplay loop>
-          <source src="fbragavideo.mp4" type="video/mp4">
-          <source src="fbragavideo.webm" type="video/webm">
+          <source src="media/fbragavideo.mp4" type="video/mp4">
+          <source src="media/fbragavideo.webm" type="video/webm">
           <object id="flowplayer" width="700" height="400" data="flowplayer-3.2.7.swf" type="application/x-shockwave-flash">
               <param name="movie" value="flowplayer-3.2.7.swf">
-              <param name="flashvars" value='config={"clip":"fbragavideo.mp4"}'>
+              <param name="flashvars" value='config={"clip":"media/fbragavideo.mp4"}'>
           </object>
           Your browser does not support the video tag.
       </video>
@@ -58,7 +59,7 @@
 
   </main>
 
-  <footer>
+  <footer class="flexItem footerflex">
     <p> Fernando Braga Photography &copy; | fernando.bragga@gmail.com </p>
   </footer>
 

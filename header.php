@@ -1,15 +1,14 @@
-<div class="row">
-  <div class="<column">
-    <img class="logo" src="fblogovert.png" width="250px">
-  </div>
-  <div class="column">
-    <h1>Fernando <span class="yellow">Braga </span>Photography</h1>
-  </div>
-</div>
 
-<nav>
-  <ul>
-    <li><a href="sponsors.html">Sponsors</a></li>
-    <li><a href="index.html">Some Login Page</a></li>
-  </ul>
-</nav>
+    <div class="flexLogo">
+      <img class="logo" src="media/fblogovert.png" width="250px">
+      <h1>Fernando <span class="yellow">Braga </span>Photography</h1>
+    </div>
+
+    <div class="wrapper">
+      <nav class="flex-nav">
+        <ul>
+          <li><a href="sponsors.html">Sponsors</a></li>
+          <li><a href="index.html">Some Login Page</a></li>
+        </ul>
+      </nav>
+    </div>

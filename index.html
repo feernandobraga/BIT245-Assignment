@@ -2,35 +2,43 @@
 <html>
 <head>
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/styles2.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="scripts.js"></script>
+  <script src="scripts/scripts.js"></script>
   <title>Fernando Braga</title>
 </head>
 <body>
-<div class="centerviewpoint">
+<div class="WrapFlexContainer">
 
   <main>
-  <div class="happyForm">
-      <form name="inputForm" class="amazingForm" onsubmit="return validateForm()" action="process.php" method="post">
-        <label>Child's Family Name: </label>
-        <input type="text" name="childFirstName" value="">
-        <br>
-        <label>Carer's Family Name: </label>
-        <input type="text" name="carerFamilyName" value="">
-        <br><br>
-        <input type="submit" name="submit" value="Submit">
-        <input type="reset" name="clearBtn">
+    <div class="formFlexContainer">
+      <form name="inputForm" class="amazingForm" onsubmit="return validateForm()" action="process2.php" method="post">
+
+        <div class="flexFields">
+          <label>Child's Family Name: </label>
+          <input type="text" name="childFirstName" value="">
+        </div>
+
+        <div class="flexFields">
+          <label>Carer's Family Name: </label>
+          <input type="text" name="carerFamilyName" value="">
+        </div>
+
+        <div class="flexFields flexBtn">
+          <input type="submit" name="submit" value="Submit">
+          <input type="reset" name="clearBtn">
+        </div>
+
       </form>
-  </div>
+    </div>
 
   </main>
 
-  <footer>
+  <footer class="flexItem footerflex">
     <p> Fernando Braga Photography &copy; | fernando.bragga@gmail.com</p>
   </footer>
-
 </div>
+
 
 </body>
 </html>

@@ -1,0 +1,382 @@
+ body {
+
+  color: white;
+  background-image: url('../media/lightningbolt.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: rgb(28, 28, 28);
+  background-position: center;
+  font-family: 'Ubuntu', Helvetica, sans-serif;
+
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 210, 0);
+}
+
+/*
+
+
+
+
+
+
+.centerviewpoint{
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+ height: auto;
+  border-radius: 3px;
+
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+.holyDiv{
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+#wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#resultTable{
+  height: -30px;
+
+}
+
+th{
+  background-color: rgb(43, 43, 43);
+  color: rgb(255, 210, 0);
+}
+
+td{
+  background-color: rgba(94, 94, 94, 0.7);
+}
+th, td{
+  padding: 10px;
+}
+
+#containerDiv{
+  text-align: center;
+}
+*/
+
+
+.mainContainer{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.flexItem{
+  flex:1;
+  text-align: center;
+  width: 60%;
+  background-color: rgba(83, 110, 133, 0.3);
+}
+
+.headerflex{
+  padding-top: 10px;
+  flex-basis: 100px;
+  flex-grow: 0.1;
+
+}
+
+.footerflex{
+  font-style: italic;
+  flex-basis: 10px;
+  flex-grow: 0.1;
+}
+
+
+.footerflex p {
+  padding: 10px;
+}
+
+.flexLogo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.flexLogo h1{
+  padding-left: 20px;
+}
+
+.logo{
+  padding-top: 10px;
+}
+
+.wrapper{
+  padding-top: 20px;
+}
+
+.flex-nav{
+  width: 50%;
+}
+
+.flex-nav a {
+  color: rgb(89, 139, 185);
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 15px 0px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+
+.flex-nav ul {
+  background-color: rgb(33, 156, 231);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.flex-nav li{
+  flex: 1;
+}
+
+h2:hover, nav ul li a:hover{
+  background-color: rgb(255, 210, 0);
+  color: black;
+}
+
+#awesomeAnimation{
+  position: relative;
+}
+
+.staticadvert{
+  color: rgb(255, 210, 0);
+  text-align: center;
+  height: 330px;
+}
+
+
+.WrapFlexContainer{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.WrapFlexContainer > *{
+  width: 70%;
+  background-color: rgba(83, 110, 133, 0.3);
+}
+
+.WrapFlexContainer main{
+  text-align: center;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.WrapFlexContainer footer{
+  flex-grow: 0.01;
+}
+
+.amazingForm{
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  background: rgba(125, 125, 125, 0.2);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flexFields {
+  display: flex;
+  padding: 3px;
+  justify-content: space-between;
+}
+
+.flexFields > * {
+  flex: 1;
+}
+
+.flexFields input[type=text]{
+  width: 300px;
+  flex: 1.5;
+  padding: 3px;
+}
+
+label{
+  padding: 2px;
+}
+
+.flexBtn{
+  display: flex;
+  width: 200px;
+  margin: 10px;
+}
+
+.flexBtn > * {
+  flex: 0.45;
+}
+
+input[type=text]{
+   border-radius: 4px;
+}
+
+::placeholder{
+  color: red;
+  font-style: oblique;
+}
+
+.yellow{
+  color: rgb(255, 210, 0);
+}
+
+.inDaMiddle{
+  display: flex;
+  height: 70vh;
+  justify-content: center;
+  align-items: center;
+}
+
+h6{
+  /* color: red; */
+}
+
+.nomatch{
+  color: red;
+}
+
+/* #flexResultTable{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+#flexResultTable > * {
+
+  border: 1px solid red;
+} */
+
+.WrapFlexContainer > * {
+  /* border: 1px solid blue; */
+}
+
+#rsContainter{
+  /* border: 1px solid white; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-start; */
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  /* align-content: center; */
+  /* height: calc(100vh - headerflex); */
+}
+
+.rsCell:hover{
+  background-color: rgb(255, 210, 0);
+  color: black;
+}
+
+#rsContainter > *{
+  /* border: 1px solid white; */
+  /* flex: 1; */
+  width: 100%;
+}
+
+
+#rsContainter h2{
+  /* justify-content: flex-start; */
+  /* margin-bottom: 100px; */
+  /* flex-shrink: 1.3; */
+  /* flex-basis: 300px; */
+  /* flex-grow: 0.5; */
+  /* border: 1px solid green; */
+  /* background-color: rgba(77, 77, 77, 0.66); */
+}
+
+
+.flexResultSetWrapper{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  /* align-items: center; */
+  flex-wrap: wrap;
+  /* margin-top: -30px; */
+  /* padding: 0px; */
+  /* min-height: 100vh; */
+  /* border: 1px solid purple; */
+}
+
+.flexResultSetWrapper > *{
+  /* border: 1px solid red; */
+  flex: 1;
+}
+
+.rsHeader{
+  display: flex;
+}
+
+.rsHeader > * {
+  /* border: 1px solid red; */
+  padding: 5px;
+  margin: 5px;
+  width: 100%;
+  background-color: rgb(43, 43, 43);
+  color: rgb(255, 210, 0);
+}
+
+.rsRow{
+  display: flex;
+}
+
+.rsRow > * {
+    background-color: rgba(49, 49, 49, 0.7);
+    /* padding: 0px 5px 0px 5px; */
+    margin: 5px;
+    width: 100%;
+    /* font-size: 20px; */
+}
+
+#coolBuy{
+  display: none;
+}

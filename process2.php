@@ -20,7 +20,7 @@
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
   <link rel="stylesheet" href="css/styles2.css">
@@ -50,62 +50,51 @@
     <h2 class="yellow dbRetrieve">I've successfully retrieve someone from the database =D </h2>
 
         <div class="flexResultSetWrapper">
-          <div class="rsHeader">
-            <div class="">
-              <h4>Kid ID</h4>
-            </div>
-            <div class="">
-              <h4>Given Name</h4>
-            </div>
-            <div class="">
-              <h4>Family Name</h4>
-            </div>
-            <div class="">
-              <h4>Gender</h4>
-            </div>
-            <div class="">
-              <h4>Date of Birth</h4>
-            </div>
-            <div class="">
-              <h4>Carer Given Name</h4>
-            </div>
-            <div class="">
-              <h4>Carer Family Name</h4>
-            </div>
+
+          <table>
+            <tr>
+              <th>Kid ID</th>
+              <th>Given Name</th>
+              <th>Family Name</th>
+              <th>Gender</th>
+              <th>Date of Birth</th>
+              <th>Carer Given Name</th>
+              <th>Carer Family Name</th>
+            </tr>
+
+          <?php
+            while ($row = $result_set->fetch_assoc())
+            { ?>
+              <tr>
+                <td>
+                  <?= $row['kidID']?>
+                </td>
+                <td class="rsCell">
+                  <?= $row['givenName']?>
+                </td>
+                <td>
+                  <?= $row['familyName']?>
+                </td>
+                <td>
+                  <?= $row['gender']?>
+                </td>
+                <td>
+                  <?= $row['dateOfBirth']?>
+                </td>
+                <td>
+                  <?= $row['carerGivenName']?>
+                </td>
+                <td>
+                  <?= $row['carerFamilyName']?>
+                </td>
+            </tr>
+          </table>
+
+          <?php
+          }
+          ?>
+
         </div>
-
-        <?php
-          while ($row = $result_set->fetch_assoc())
-          { ?>
-            <div class="rsRow">
-              <div class="rsCell">
-                <h6><?= $row['kidID']?></h6>
-              </div>
-              <div class="rsCell">
-                <h6><?= $row['givenName']?></h6>
-              </div>
-              <div class="rsCell">
-                <h6><?= $row['familyName']?></h6>
-              </div>
-              <div class="rsCell">
-                <h6><?= $row['gender']?></h6>
-              </div>
-              <div class="rsCell">
-                <h6><?= $row['dateOfBirth']?></h6>
-              </div>
-              <div class="rsCell">
-                <h6><?= $row['carerGivenName']?></h6>
-              </div>
-              <div class="rsCell">
-                <h6><?= $row['carerFamilyName']?></h6>
-              </div>
-          </div>
-
-        <?php
-        }
-
-         ?>
-      </div>
 
       <?php
     } else

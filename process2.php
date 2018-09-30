@@ -29,7 +29,7 @@
   <title>Fernando Braga</title>
 </head>
 <body>
-<div class="WrapFlexContainer">
+<div class="mainContainer">
 
   <header class="flexItem headerflex">
     <?php
@@ -38,7 +38,7 @@
   </header>
 
 
-  <main id="rsContainter">
+  <main class="flexItem rsFlex">
 
     <?php
 
@@ -47,7 +47,7 @@
         $kidFound = true;
     ?>
 
-    <h2 class="yellow logo">I've successfully retrieve someone from the database =D </h2>
+    <h2 class="yellow dbRetrieve">I've successfully retrieve someone from the database =D </h2>
 
         <div class="flexResultSetWrapper">
           <div class="rsHeader">

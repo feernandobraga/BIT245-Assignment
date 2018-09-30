@@ -16,138 +16,77 @@ a {
   color: rgb(255, 210, 0);
 }
 
-/*
-
-
-
-
-
-
-.centerviewpoint{
-  position: absolute;
-  margin: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 50%;
- height: auto;
-  border-radius: 3px;
-
-  text-align: center;
-}
-
-
-
-
-
-
-
-
-
-
-.holyDiv{
-  height: 70vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-
-
-
-
-
-
-
-
-
-
-#wrapper{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#resultTable{
-  height: -30px;
-
-}
-
-th{
-  background-color: rgb(43, 43, 43);
-  color: rgb(255, 210, 0);
-}
-
-td{
-  background-color: rgba(94, 94, 94, 0.7);
-}
-th, td{
-  padding: 10px;
-}
-
-#containerDiv{
-  text-align: center;
-}
-*/
-
 
 .mainContainer{
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
 }
 
-
-
-.flexItem{
-  flex:1;
-  text-align: center;
-  width: 60%;
+.mainContainer > *{
   background-color: rgba(83, 110, 133, 0.3);
 }
 
+
+.flexItem{
+  /* border: 1px solid white; */
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  width: 57%;
+  /* display: flex; */
+  /* flex-direction: column; */
+}
+
+.flexItem > * {
+  /* flex: 1; */
+  /* border: 1px solid red; */
+}
+
 .headerflex{
-  padding-top: 10px;
-  flex-basis: 100px;
-  flex-grow: 0.1;
-
+  /* padding-top: 10px; */
+  /* flex-basis: 100px; */
+  /* flex-grow: 0.1; */
+  /* margin-top: auto; */
+  /* border: 1px dashed yellow; */
+  display: flex;
+  justify-content: flex-start;
+  /* align-content: center; */
 }
 
-.footerflex{
-  font-style: italic;
-  flex-basis: 10px;
-  flex-grow: 0.1;
-}
 
+.headerflex > * {
+  /* border: 1px dashed orange; */
 
-.footerflex p {
-  padding: 10px;
 }
 
 .flexLogo{
+  /* align-self: flex-end; */
+  /* border: 1px dashed blue; */
   display: flex;
+  /* flex-direction: column; */
   justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
-
 }
 
-.flexLogo h1{
-  padding-left: 20px;
+
+
+.flexLogo > * {
+  /* border: 1px dashed white; */
+  flex: 1;
 }
 
-.logo{
+.flexLogo .logo{
+  /* border: 1px dashed orange; */
+  flex: 0 0 100px;
   padding-top: 10px;
-}
-
-.wrapper{
-  padding-top: 20px;
-}
-
-.flex-nav{
-  width: 50%;
+  padding-left: 30px;
 }
 
 .flex-nav a {
@@ -160,7 +99,6 @@ th, td{
   text-align: center;
   transition: all 0.5s;
 }
-
 
 .flex-nav ul {
   background-color: rgb(33, 156, 231);
@@ -178,6 +116,51 @@ h2:hover, nav ul li a:hover{
   background-color: rgb(255, 210, 0);
   color: black;
 }
+
+.footerflex{
+  font-style: italic;
+  display: flex;
+  justify-content: flex-end;
+  /* flex-basis: 10px; */
+  /* flex-grow: 0.1; */
+}
+
+.footerflex p {
+  padding: 10px;
+}
+
+.rsFlex{
+  /* flex:1; */
+  /* flex-direction: center; */
+  /* text-align: center; */
+  /* justify-content:space-around; */
+  /* align-items: stretch; */
+  /* width: 60%; */
+  /* background-color: rgba(83, 110, 133, 0.3); */
+  display: flex;
+  /* border: 1px solid red; */
+  /* margin-top: -30px; */
+  /* justify-content: flex-start; */
+}
+
+
+.rsFlex > *{
+  /* flex: 1; */
+  /* border: 1px dashed green; */
+  /* align-self: flex-end; */
+  /* margin-top: -100px; */
+  margin: 0px;
+  /* margin-top: -10px; */
+}
+
+.rsFlex .dbRetrieve{
+  /* align-self: flex-start; */
+  /* border: 1px dashed white; */
+}
+.wrapper{
+  padding-top: 20px;
+}
+
 
 #awesomeAnimation{
   position: relative;

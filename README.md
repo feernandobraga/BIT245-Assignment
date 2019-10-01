@@ -1,2 +1,1 @@
-# BIT245-Assignment
-# BIT245
+This was my submission for my Web Development Assignment
